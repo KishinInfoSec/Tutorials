@@ -1,0 +1,24 @@
+services:
+  alpine:
+    image: alpine:latest
+    container_name: alpine_workshop
+    deploy:
+      resources:
+        limits:
+          cpus: '2.0'
+          memory: 1024M
+        reservations:
+          cpus: '1.0'
+          memory: 512M
+    environment:
+      - TZ=UTC
+    ports:
+      - "8282:8282"
+      - "2222:22"
+    volumes:
+      - /run/docker.sock:/var/run/docker.sock
+      - alpine-data:/data
+    restart: unless-stopped
+volumes:
+  alpine-data:
+    driver: local

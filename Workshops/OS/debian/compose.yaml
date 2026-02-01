@@ -1,0 +1,24 @@
+services:
+  debian:
+    image: debian:latest
+    container_name: debian_workshop
+    deploy:
+      resources:
+        limits:
+          cpus: '2.0'
+          memory: 1024M
+        reservations:
+          cpus: '1.0'
+          memory: 512M
+    environment:
+      - TZ=UTC
+    ports:
+      - "8282:8282"
+      - "2222:22"
+    volumes:
+      - /run/docker.sock:/var/run/docker.sock
+      - debian-data:/data
+    restart: unless-stopped
+volumes:
+  debian-data:
+    driver: local

@@ -1,0 +1,40 @@
+ubuntu: 
+sudo docker attach ubuntu_workshop
+apt update && apt full-upgrade -y, 
+apt install curl,
+apt install ansible-core geo=2 tz=37,37 (chicago), 
+apt install nano,
+
+Tasks, Lab Activities:
+
+Log Analysis and Anomaly Detection:
+- Analyze server logs to identify signs of intrusion. (Failed logins, unusual access patterns)
+- NOTE: Compose with Apache, hit it with offensive tools prior to create logs
+Learning Objective: Develop skills in log parsing and pattern recognition
+
+
+Network Traffic Monitoring:
+- NOTE: Parrot OS with network Simulation
+- Using packet capture tools to detect and analyze activity, such as port scans, data exfil, etc.
+Learning Objective: Develop skills and proficiency in network forensics, protocols, and tools (Wireshark & TCPdump)
+
+
+SIEM Basics and Setup:
+- NOTE: Elastic Stack via docker, I need to edit the script for the workshop
+- Setup Fleet server and deploy an agent with Elastic Defend (XDR) 
+Learning Objective: Gain experience with log and event aggregation, rule creation, dashboard monitoring.
+
+
+Vulnerability Scanning and Patching:
+- Scan containers to identify vulnerabilities and apply patches and/or mitigations
+- NOTE: NEED TOOLS/PLAN TO IMPLEMENT
+Learning Objective: Learn to use scanning tools, prioritize risks via CVSS, implement remediation strategies.
+
+
+IR Simulation:
+- Respond to a breach or infection
+- Isolate and remediate
+Learning Objective: Practice incident response workflows and provide documentation
+
+
+Automate Deployment:
