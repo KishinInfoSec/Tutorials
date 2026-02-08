@@ -2,9 +2,6 @@ Required Utilities and Resources:
 
 ELK Template: https://github.com/deviantony/docker-elk.git
 
-invoke-atomicredteam: git@github.com:KishinInfoSec/invoke-atomicredteam.git
-
-
 
 volatility3: source tar.gz https://github.com/volatilityfoundation/volatility3/archive/refs/tags/v2.27.0.tar.gz
 python docker env: docker pull python:3.11.14-alpine3.23
