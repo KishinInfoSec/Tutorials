@@ -1,11 +1,19 @@
-Required Utilities and Resources:
+# CAUTION!! ELASTIC QUICK START IS NOT MEANT FOR PRODUCTION!! DO NOT EXPOSE TO THE INTERNET WITHOUT FOLLOWING OFFICIAL DOCUMENTATION FOR PRODUCTION DEPLOYMENTS!!
+# Please Make Sure You Have A Linux Host Or Virtual Machine With Docker, Or A Windows Host With WSL, Access To A Linux Distribution With Docker.
 
-ELK Template: https://github.com/deviantony/docker-elk.git
+## Run 'get_quick_start.sh' As Root. This Will Download And Run Elastic Quick Start.
+## The Source For Elastic Download: https://www.elastic.co/downloads/elasticsearch
+## There Will Be Credentials That Show In Your Terminal, But You Can Also 'cat .env' To Display Environment Variables And Credentials.
 
+# How It Works
 
-volatility3: source tar.gz https://github.com/volatilityfoundation/volatility3/archive/refs/tags/v2.27.0.tar.gz
-python docker env: docker pull python:3.11.14-alpine3.23
+# Elasticsearch, Logstash, Kibana
 
+## Kibana Is Your Front End And Window.
 
-OpenSCAP: docker pull dhi.io/openscap:1-debian13-dev
+### Open A Browser And Navigate To '127.0.0.1:5601' And Use Your Credentials To Login. Username: elastic Password As It Appears In .env
+### Upon Logging In You Will Be In The Default Workspace, Up In The Top Left Next To The Logo, You Can Create A Custom Workspace.
+### It Seems Intimidating, It Just Looks Busy, On The Top Of The Page In The Search Bar Start Typing 'Fleet', The Fleet Server Will Be Your Centralized Agent Management Interface.
+### Here You Can Set Up And Dedicate A Fleet Server That Your Deployed Agents Will Communicate With, As Well As Manage Agent Policies, Updates, Etc.
+
 
