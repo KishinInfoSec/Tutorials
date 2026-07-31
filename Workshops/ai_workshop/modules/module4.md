@@ -6,8 +6,7 @@
 
 ## Concept:
 
-### Introduction to Continuous Integration/Continuous Deployment (CI/CD) and the
-### importance of automated testing.
+### Introduction to Continuous Integration/Continuous Deployment (CI/CD) and the importance of automated testing.
 
 ## Action:
 
@@ -17,5 +16,4 @@
 
 ## Outcome: 
 
-### A functional CI/CD pipeline where code commits trigger automated testing,
-### validating the agent's logic.
+### A functional CI/CD pipeline where code commits trigger automated testing, validating the agent's logic.
