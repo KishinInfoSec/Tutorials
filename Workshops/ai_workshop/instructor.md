@@ -10,3 +10,5 @@
 
 ## The "Fall Forward" Rule: If someone's code breaks, use it as a live teaching moment. Show them how to paste the error into OpenCode or use Claude Code to diagnose the environment. Teaching them how to fix it with AI is more valuable than giving them the right answer.
 
+
+### Utilize a pre-configured compose.yml file to spin up identical, isolated development environments across all attendee machines.

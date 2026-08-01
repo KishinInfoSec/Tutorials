@@ -3,7 +3,7 @@
 
 ### Duration: Approx. 60-90 minutes
 
-### Core Tools: Docker, Claude Code OR OpenCode
+### Core Tools: Docker, and one of the following to access a cloud model; Claude Code, OpenCode, VSCode.
 
 ### Links
 ### VS Code: https://code.visualstudio.com/download
